@@ -14,7 +14,7 @@ jobs:
       - save_cache:
           keys: "npm-packages"
           paths:
-            - /scr/node_modules
+            - /src/node_modules
       - run: npm run lint
   test:
     docker:
