@@ -24,7 +24,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - command:
+      - commands:
           npm audit
           npm audit fix --force
 # Invoke jobs via workflows
